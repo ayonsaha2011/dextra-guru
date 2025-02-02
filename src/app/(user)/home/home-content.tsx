@@ -469,7 +469,7 @@ export function HomeContent() {
         <img
           src="/images/logo_footer.svg"
           loading="lazy"
-          alt
+          alt="Dextra"
           className="logo_footer"
         />
       </div>
