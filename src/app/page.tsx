@@ -79,29 +79,6 @@ const Header = ({ handleLogin }: { handleLogin: () => void }) => {
               </div>
             </div>
           </div>
-
-          {isMobileMenuOpen && (
-            <div className="absolute left-4 right-4 top-full mt-2 rounded-lg border border-border/50 bg-background/95 p-3 shadow-lg backdrop-blur-md md:hidden">
-              <nav className="flex flex-col gap-1.5">
-                {navItems.map((item) => {
-                  const Icon = item.icon;
-                  return (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary/5 hover:text-primary"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <Icon className="h-4 w-4" />
-                      {item.label}
-                    </a>
-                  );
-                })}
-              </nav>
-            </div>
-          )}
         </div>
       </header>
     </BlurFade>
